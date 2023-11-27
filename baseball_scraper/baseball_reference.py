@@ -337,7 +337,7 @@ class TeamSummaryScraper:
         self.raw_cache[year] = BeautifulSoup(s, "lxml")
 
     def _url(self, year):
-        return "https://www.baseball-reference.com/leagues/majors/{}.shtml" \
+        return "https://www.baseball-reference.com/leagues/MLB/{}.shtml" \
             .format(year)
 
     def _parse_raw(self, year):

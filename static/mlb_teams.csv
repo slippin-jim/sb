@@ -1,31 +1,31 @@
 ﻿level,league,division,team_id,team_name,abbrev_name
-MLB,AL,C,MIN,Minnesota Twins,MIN
-MLB,NL,C,PIT,Pittsburgh Pirates,PIT
-MLB,AL,E,TBA,Tampa Bay Rays,TBA
-MLB,NL,C,CHN,Chicago Cubs,CHN
-MLB,AL,C,DET,Detroit Tigers,DET
-MLB,NL,E,MIA,Miami Marlins,MIA
-MLB,AL,W,OAK,Oakland Athletics,OAK
-MLB,AL,W,SEA,Seattle Mariners,SEA
-MLB,NL,E,WAS,Washington Nationals,WAS
-MLB,AL,E,BAL,Baltimore Orioles,BAL
-MLB,AL,C,CLE,Cleveland Indians,CLE
-MLB,AL,W,ANA,Los Angeles Angels,ANA
-MLB,NL,E,NYN,New York Mets,NYN
-MLB,NL,W,SDN,San Diego Padres,SDN
-MLB,AL,W,TEX,Texas Rangers,TEX
 MLB,NL,W,ARI,Arizona Diamondbacks,ARI
-MLB,AL,C,CHW,Chicago White Sox,CHW
-MLB,AL,W,HOU,Houston Astros,HOU
-MLB,NL,C,MIL,Milwaukee Brewers,MIL
-MLB,NL,E,PHI,Philadelphia Phillies,PHI
-MLB,NL,C,SLN,St. Louis Cardinals,SLN
-MLB,AL,E,BOS,Boston Red Sox,BOS
-MLB,NL,W,COL,Colorado Rockies,COL
-MLB,NL,W,LAN,Los Angeles Dodgers,LAN
-MLB,AL,E,NYA,New York Yankees,NYA
-MLB,NL,W,SFN,San Francisco Giants,SFN
-MLB,AL,E,TOR,Toronto Blue Jays,TOR
 MLB,NL,E,ATL,Atlanta Braves,ATL
+MLB,AL,E,BAL,Baltimore Orioles,BAL
+MLB,AL,E,BOS,Boston Red Sox,BOS
+MLB,NL,C,CHC,Chicago Cubs,CHC
+MLB,AL,C,CHW,Chicago White Sox,CHW
 MLB,NL,C,CIN,Cincinnati Reds,CIN
-MLB,AL,C,KCA,Kansas City Royals,KCA
+MLB,AL,C,CLE,Cleveland Indians,CLE
+MLB,NL,W,COL,Colorado Rockies,COL
+MLB,AL,C,DET,Detroit Tigers,DET
+MLB,AL,W,HOU,Houston Astros,HOU
+MLB,AL,C,KCR,Kansas City Royals,KCR
+MLB,AL,W,LAA,Los Angeles Angels,LAA
+MLB,NL,W,LAD,Los Angeles Dodgers,LAD
+MLB,NL,E,MIA,Miami Marlins,MIA
+MLB,NL,C,MIL,Milwaukee Brewers,MIL
+MLB,AL,C,MIN,Minnesota Twins,MIN
+MLB,AL,E,NYY,New York Yankees,NYY
+MLB,NL,E,NYM,New York Mets,NYM
+MLB,AL,W,OAK,Oakland Athletics,OAK
+MLB,NL,E,PHI,Philadelphia Phillies,PHI
+MLB,NL,C,PIT,Pittsburgh Pirates,PIT
+MLB,NL,W,SDP,San Diego Padres,SDP
+MLB,AL,W,SEA,Seattle Mariners,SEA
+MLB,NL,W,SFG,San Francisco Giants,SFG
+MLB,NL,C,STL,St. Louis Cardinals,STL
+MLB,AL,E,TBR,Tampa Bay Rays,TBR
+MLB,AL,W,TEX,Texas Rangers,TEX
+MLB,AL,E,TOR,Toronto Blue Jays,TOR
+MLB,NL,E,WAS,Washington Nationals,WSN
