@@ -17,7 +17,7 @@ def scrape_handler(logger,s,x):
     return results
 
 def main():
-    base_dir = os.path.abspath(os.path.pardir)
+    base_dir = os.path.dirname(os.path.abspath(__file__))
     log_path = os.path.join(base_dir,'logs')
     working_path = os.path.join(base_dir,'data')
 
