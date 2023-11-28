@@ -62,9 +62,13 @@ def generate_predictions(year='2023',league='mlb'):
     def win_loss_ratio(arr):
         return np.sum(arr) / arr.shape[0]
 
+    def american_odds(prob):
+        return (100-(prob*100))/prob
+
     teams_gp['sim_differential'] = teams_gp.apply(lambda x: unravel(x.sim_differential), axis=1)
     teams_gp['win_loss'] = teams_gp.apply(lambda x: win_loss(x.sim_differential), axis=1)
     teams_gp['w_l_ratio'] = teams_gp.apply(lambda x: win_loss_ratio(x.win_loss), axis=1)
+    teams_gp['american_odds'] = teams_gp.apply(lambda x: american_odds(x.win_loss_ratio), axis=1)
     teams_gp.to_csv(out_path)
 
 if __name__ == '__main__':
