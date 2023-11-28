@@ -1,7 +1,6 @@
 #!/Users/jim/anaconda3/envs/sb/bin/python
 
 import pandas as pd
-import baseball_scraper.baseball_reference as bsr
 from helpers import get_teams
 import time
 import os
@@ -16,8 +15,8 @@ def scrape_handler(logger,s,x):
         results = pd.DataFrame()
     return results
 
-def main():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+def scrape_results(scraper):
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     log_path = os.path.join(base_dir,'logs')
     working_path = os.path.join(base_dir,'data')
 
@@ -30,20 +29,19 @@ def main():
     season_year = dt.now().year
     teams = get_teams.get_team_names('mlb')
 
-    s = bsr.TeamScraper()
-    s.set_season(season_year)
+    scraper.set_season(season_year)
     i = 0
     for x in teams:
         if i == 0:
-            results = scrape_handler(logger,s,x)
+            results = scrape_handler(logger,scraper,x)
             i+=1
         elif i > 0 and i % 4 != 0:
-            new = scrape_handler(logger,s,x)
+            new = scrape_handler(logger,scraper,x)
             results = pd.concat([results,new],ignore_index=True)
             i+=1
         else:
             time.sleep(2*60)
-            new = scrape_handler(logger,s,x)
+            new = scrape_handler(logger,scraper,x)
             results = pd.concat([results,new],ignore_index=True)
             i+=1
 
@@ -52,4 +50,4 @@ def main():
     return "completed"
 
 if __name__ == '__main__':
-    main()
+    scrape_results()

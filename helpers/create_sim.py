@@ -6,8 +6,8 @@ import os
 import logging
 from datetime import datetime as dt
 
-def main(year='2023',league='mlb'):
-    cur_dir = os.path.dirname(os.path.abspath(__file__))
+def generate_predictions(year='2023',league='mlb'):
+    cur_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     log_path = os.path.join(cur_dir,'logs')
     out_path = f'{cur_dir}/predictions/{year}_{league}_{dt.now().strftime("%Y-%m-%d")}_projections.csv'
 
@@ -36,7 +36,7 @@ def main(year='2023',league='mlb'):
     def rand_results(rand=None,avg_runs=None,stdev_runs=None):
         return max(round(sci.norm.ppf(rand, loc=avg_runs, scale=stdev_runs),2),0)
 
-    def sim_results(n=5,avg_runs=None,stdev_runs=None):
+    def sim_results(n=10000,avg_runs=None,stdev_runs=None):
         empty_arr = np.random.random(size=n).tolist()
         rand_ = np.vectorize(rand_results)
         results = rand_(empty_arr,avg_runs,stdev_runs)
