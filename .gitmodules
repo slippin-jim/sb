@@ -1,0 +1,6 @@
+[submodule "tennis_stats/atp"]
+	path = tennis_stats/atp
+	url = https://github.com/JeffSackmann/tennis_atp.git
+[submodule "tennis_stats/tennis_stats/slam_point_by_point"]
+	path = tennis_stats/tennis_stats/slam_point_by_point
+	url = https://github.com/JeffSackmann/tennis_slam_pointbypoint.git
